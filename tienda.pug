@@ -1,0 +1,15 @@
+doctype html
+html(lang="es")
+
+head
+    title Tienda
+    link(rel="stylesheet", href="/css/estilos.css") 
+
+body
+    h1
+        a(href="Tienda.com") CATALOGO
+    each vehiculo in vehiculos 
+        div.item
+            h2 VEHICULO #{vehiculo.nombre}
+            img(src=vehiculo.imagen, alt="camiseta")
+            a(href="tienda/comprar/"+vehiculo.nombre) VER DETALLES

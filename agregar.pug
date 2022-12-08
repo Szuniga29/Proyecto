@@ -1,0 +1,29 @@
+doctype html
+html(lang="es")
+head
+    title Inicio
+    link(rel="stylesheet", href="/css/estilos.css")
+
+body
+    
+    h1 AGREGAR VEHICULO AL CATALOGO
+    nav
+        a(href='/' alt='regresar') Regresar al inicio
+    form(action='/agregar', method='GET')
+        div(class="section")
+            div(class="title") Nombre del Vehiculo 
+            div(class="field")
+                input(type="text", id="txtNombre", name="nombre")
+        div(class="section")
+            div(class="title") Imagen del Vehiculo 
+            div(class="field")
+                input(type="text", id="txtImagen", name="imagen")
+        div(class="section")
+            div(class="title") Descripción del vehiculo 
+            div(class="field")
+                input(type="text", id="txtVehiculo", name="vehiculo")
+        br
+        div(class="section")
+            div(class="button")
+                input(type="submit", value="Agregar")
+        
